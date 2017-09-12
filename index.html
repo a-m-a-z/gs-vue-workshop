@@ -19,6 +19,15 @@
           </div>
         </div>
       </section>
+      <section class="list">
+        <ul>
+          <li v-for="todo in todos">
+            <img src="images/completed.svg" alt="" v-if="todo.completed"> 
+            <img src="images/pending.svg" alt="" v-else> 
+            {{todo.text}}
+          </li>
+        </ul>
+      </section>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
     <script src="app.js"></script>

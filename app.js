@@ -3,12 +3,15 @@ new Vue({
   data: function() {
     return {
       text: '',
+      todos: [{
+        text: 'Update todo',
+        completed: true
+      }]
     }
   },
   methods: {
     addTask: function() {
-      console.log(this.text);
-      this.text = '';
+      this.todos.push({text: this.text, completed: false});
     }
   }
 })
