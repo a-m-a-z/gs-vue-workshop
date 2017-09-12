@@ -2,22 +2,25 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="app.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-3 controls" @click="decrement()">
-          <h2>👎</h2>
+      <nav>
+        <div class="logo">
+          <img src="images/logo.svg" alt="">
         </div>
-        <div class="col-md-6 counter">
-          <h1>{{counter}}</h1>
+      </nav>
+      <section class="controls row">
+        <div class="task-form col-md-6">
+          <div class="form-group">
+            <label>+ New task</label>
+            <input type="text" class="form-control text" v-model="text">
+            <button class="submit" @click="addTask()">Add Task</button>
+          </div>
         </div>
-        <div class="col-md-3 controls" @click="increment()">
-          <h2>👍</h2>
-        </div>
-      </div>
+      </section>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
