@@ -21,7 +21,7 @@
       </section>
       <section class="list">
         <ul>
-          <li v-for="todo in todos">
+          <li v-for="todo in todos" @click="toggleTodo(todo)">
             <img src="images/completed.svg" alt="" v-if="todo.completed"> 
             <img src="images/pending.svg" alt="" v-else> 
             {{todo.text}}
