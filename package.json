@@ -1,0 +1,14 @@
+{
+  "name": "001-gs-vue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/christiannwamba/gs-vue-workshop",
+  "author": "Christian Nwamba <nwambachristian@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
+  }
+}
