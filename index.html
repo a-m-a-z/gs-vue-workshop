@@ -26,7 +26,7 @@
       </section>
       <section class="list">
         <ul>
-          <li v-for="todo in filteredTodos" @click="toggleTodo(todo)">
+          <li v-for="todo in filteredTodos" @click="toggleTodo(todo)" v-bind:class="{completed: todo.completed}">
             <img src="images/completed.svg" alt="" v-if="todo.completed"> 
             <img src="images/pending.svg" alt="" v-else> 
             {{todo.text}}

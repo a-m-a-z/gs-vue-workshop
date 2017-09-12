@@ -104,6 +104,11 @@ button.filter:hover {
   transition: background 100ms ease-in-out;
 }
 
+.list ul li.completed {
+  text-decoration: line-through;
+  color: #A1A4A5;
+}
+
 .list ul li:hover{
   background: #F5F5F5;
 }
