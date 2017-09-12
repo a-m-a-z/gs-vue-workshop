@@ -4,13 +4,9 @@ const controls = document.querySelectorAll('.controls');
 const decrement = controls[0];
 const increment = controls[1];
 
-increment.addEventListener('click', function() {
-  updateCounter(+1)
-})
+increment.addEventListener('click', () => updateCounter(+1))
 
-decrement.addEventListener('click', function() {
-  updateCounter(-1)
-})
+decrement.addEventListener('click', () => updateCounter(-1))
 
 function updateCounter(num) {
   let counterInt = parseInt(counter.innerText);
