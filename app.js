@@ -1,15 +1,16 @@
-const counter = document.querySelector('.counter h1');
-const controls = document.querySelectorAll('.controls');
-
-const decrement = controls[0];
-const increment = controls[1];
-
-increment.addEventListener('click', () => updateCounter(+1))
-
-decrement.addEventListener('click', () => updateCounter(-1))
-
-function updateCounter(num) {
-  let counterInt = parseInt(counter.innerText);
-  counterInt = counterInt + num;
-  counter.innerText = counterInt;
-}
+new Vue({
+  el: '.container',
+  data: function() {
+    return {
+      counter: 0
+    }
+  },
+  methods: {
+    increment: function() {
+      this.counter = this.counter + 1;
+    },
+    decrement: function() {
+      this.counter = this.counter - 1;
+    }
+  },
+})

@@ -2,17 +2,18 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-3 controls">
+        <div class="col-md-3 controls" @click="decrement()">
           <h2>👎</h2>
         </div>
         <div class="col-md-6 counter">
-          <h1>0</h1>
+          <h1>{{counter}}</h1>
         </div>
-        <div class="col-md-3 controls">
+        <div class="col-md-3 controls" @click="increment()">
           <h2>👍</h2>
         </div>
       </div>
