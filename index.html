@@ -19,9 +19,9 @@
           </div>
         </div>
         <div class="filters">
-          <button class="filter" @click="filterTodos('ALL')">All</button>
-          <button class="filter" @click="filterTodos('COMPLETED')">Completed</button>
-          <button class="filter" @click="filterTodos('PENDING')">Pending</button>
+          <button :class="{filter: true, active: state === 'ALL'}" @click="filterTodos('ALL')">All</button>
+          <button :class="{filter: true, active: state === 'COMPLETED'}" @click="filterTodos('COMPLETED')">Completed</button>
+          <button :class="{filter: true, active: state === 'PENDING'}" @click="filterTodos('PENDING')">Pending</button>
         </div>
       </section>
       <section class="list">

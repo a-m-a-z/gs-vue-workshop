@@ -78,7 +78,7 @@ button.filter {
   transition: all 150ms ease-in-out;
 }
 
-button.filter.completed {
+button.filter.active {
   background: #6ACF67;
   color: #fff;
   border: 1px solid #4BB148;
