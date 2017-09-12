@@ -1,0 +1,121 @@
+/* Counter  */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+html, body {
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  padding: 10px 15px;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif !important;
+}
+
+.logo img {
+  display: block;
+  width: 70px;
+  height: auto;
+}
+
+.controls {
+  margin-top: 30px;
+}
+
+label {
+  display: block;
+  color: #6ACF67;
+  font-weight: 300;
+}
+.text {
+  float: left;
+  width: 70%;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.text:focus {
+  border-color: #6ACF67;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(106,207,103,.8);
+}
+
+button.submit {
+  background: #6ACF67;
+  color: #fff;
+  padding: 6px 8px;
+  border: 1px solid #4BB148;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  transition: background 150ms ease-in-out;
+}
+
+button.submit:hover {
+  background: #49C445;
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+button.filter {
+  background: none;
+  color: #95989A;
+  padding: 6px 8px;
+  width: 100px;
+  border: 1px solid #95989A;
+  border-radius: 0;
+  margin-right: 5px;
+  transition: all 150ms ease-in-out;
+}
+
+button.filter.completed {
+  background: #6ACF67;
+  color: #fff;
+  border: 1px solid #4BB148;
+}
+
+button.filter:hover {
+  background: #49C445;
+  color: #fff;
+  border: 1px solid #4BB148;
+}
+
+.list ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; 
+  font-family: 'Lato', sans-serif !important;
+}
+
+.list ul li{
+  border-bottom: 1px solid #E0E1E1;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: background 100ms ease-in-out;
+}
+
+.list ul li.completed {
+  text-decoration: line-through;
+  color: #A1A4A5;
+}
+
+.list ul li:hover{
+  background: #F5F5F5;
+}
+
+.list img {
+  width: 16px;
+  height: auto;
+  margin-right: 15px;
+  font-family: 'Lato', sans-serif !important;
+}
