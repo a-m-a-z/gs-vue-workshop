@@ -18,10 +18,15 @@
             <button class="submit" @click="addTask()">Add Task</button>
           </div>
         </div>
+        <div class="filters">
+          <button class="filter" @click="filterTodos('ALL')">All</button>
+          <button class="filter" @click="filterTodos('COMPLETED')">Completed</button>
+          <button class="filter" @click="filterTodos('PENDING')">Pending</button>
+        </div>
       </section>
       <section class="list">
         <ul>
-          <li v-for="todo in todos" @click="toggleTodo(todo)">
+          <li v-for="todo in filteredTodos" @click="toggleTodo(todo)">
             <img src="images/completed.svg" alt="" v-if="todo.completed"> 
             <img src="images/pending.svg" alt="" v-else> 
             {{todo.text}}
