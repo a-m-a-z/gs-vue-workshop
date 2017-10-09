@@ -16,6 +16,7 @@
             <label>+ New task</label>
             <input type="text" class="form-control text" v-model="text">
             <button class="submit" @click="addTask()">Add Task</button>
+            <span>{{error}}</span>
           </div>
         </div>
         <div class="filters">
