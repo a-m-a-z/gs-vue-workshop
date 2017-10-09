@@ -35,6 +35,12 @@ label {
   color: #6ACF67;
   font-weight: 300;
 }
+
+span {
+  display: block;
+  color: #fa1504;
+  font-weight: 300;
+}
 .text {
   float: left;
   width: 70%;
