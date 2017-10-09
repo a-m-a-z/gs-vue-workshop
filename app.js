@@ -6,6 +6,7 @@ new Vue({
   data: function() {
     return {
       text: '',
+      error: '',
       state: ALL,
       todos: [{
         text: 'Update todo',
@@ -27,6 +28,11 @@ new Vue({
   },
   methods: {
     addTask: function() {
+      if(this.text ===''){
+        return this.error = 'Please enter your todo';
+      } else{
+        this.error ='';
+      }
       this.todos.push({text: this.text, completed: false});
       this.text = '';
     },
